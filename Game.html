@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://thumbs.dreamstime.com/b/football-soccer-ball-kickoff-game-sunset-38302251.jpg"
+                                alt="football-soccer-ball-kickoff-game-sunset-38302251">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            FootBall Score Keeper
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="player1">0</span> to <span id="player2">0</span></h1>
+                            <p class="subtitle">Use the button below to keep the score !.</p>
+
+                            <label for="playupto" class="label is-large is-inline">Playing till round -</label>
+                            <div class="select is-rounded">
+                                <select id="playupto">
+                                    <option value="3" selected>3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="pl1btn" class="button is-primary card-footer-item">+1 Player One</button>
+                        <button id="pl2btn" class="button is-info card-footer-item">+2 Player One</button>
+                        <button type="reset" class="button is-danger card-footer-item">Reset</button>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>
